@@ -1,1 +1,23 @@
-theme: jekyll-theme-slate
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: pygments
+markdown: redcarpet
+encoding: utf-8
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Lee's Journey
+
+description: Lee的随想和技术空间
+author:
+  name: penglee87
+  email: penglee87@163.com
+
+
+categories_path: categories.html

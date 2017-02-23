@@ -1,0 +1,69 @@
+---
+layout: page
+tagline:
+---
+
+
+<div class="container container-wrap ">
+
+    <div class="container-side-nav">
+        <h3>实用链接</h3>
+        <div class="container-side-nav-link">
+            <li><a target="_blank"
+                   href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python教程</a>
+            </li>
+            <li><a target="_blank"
+                   href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a>
+            </li>
+            <li><a target="_blank" href="https://github.com/penglee87">My Git</a></li>
+            <li><a target="_blank" href="{{ url_for('.blog', id=1) }}">关于本站</a></li>
+        </div>
+    </div>
+    
+    
+    <ul>
+        {% for post in paginator.posts %}
+          <div class="container-blog">
+          
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>
+            {% if post.fullview %}
+            {{ post.content }}
+            {% else %}
+            {% if post.shortinfo %}
+            {{ post.shortinfo }}
+            {% elsif post.description %}
+            {{ post.description }}
+            {% else %}
+            {{ post.excerpt }}
+            {% endif %}
+            {% endif %}
+            </p>
+            
+            <br>
+            <div style="width:80%;border-bottom:1px solid #D0D0D0;height:0px;"></div>
+            
+          </div>
+
+        {% endfor %}
+    </ul>
+
+
+<hr/>
+
+<!-- 分页链接 -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{ paginator.previous_page }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+
+</div>
