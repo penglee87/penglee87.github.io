@@ -1,5 +1,6 @@
 ---
 title:  部署自己的博客：Github+Jekyll
+description: 第一篇博客
 tags: Bash Git Github LaTeX Markdown 搜索引擎 Liquid Jekyll
 ---
 
