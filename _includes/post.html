@@ -80,12 +80,12 @@
 	  {% if page.previous %}
 	  <li class="previous" style="float:left;"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
 	  {% else %}
-	  <li class="previous disabled"><a>&larr; Previous</a></li>
+	  <li class="previous disabled" style="float:left;"><a>&larr; Previous</a></li>
 	  {% endif %}
 	  {% if page.next %}
 	  <li class="next" style="float:left;margin-left:20px;"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
 	  {% else %}
-		<li class="next disabled"><a>Next &rarr;</a>
+		<li class="next disabled" style="float:left;margin-left:20px;"><a>Next &rarr;</a>
 	  {% endif %}
 	  <br clear="all">
 	</ul>
