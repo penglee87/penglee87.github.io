@@ -1,7 +1,4 @@
 ---
-author: kresnikwang
-comments: true
-date: 2015-06-07 17:42:32+00:00
 layout: post
 title: 在github pages网站下用jekyll制作博客教程
 categories:
