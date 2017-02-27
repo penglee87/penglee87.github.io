@@ -9,6 +9,7 @@ tags:
 - jekyll
 - github
 ---
+此篇文章转至 http://kresnik.wang/works/tech/2015/06/07/%E5%9C%A8github-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html
 在我动手用jekyll部署我的博客之前，一直使用godaddy上面的wordpress主页来部署我的博客[kresnik.co](kresnik.co)。[WordPress](wordpress.com)当然有很多的优点，在我看来我用WordPress主要是为了
 
 - 方便清晰的文件结构
