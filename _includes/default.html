@@ -16,9 +16,7 @@
 	<![endif]-->
 
 	<!-- Le styles -->
-	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
+
 	<link href="{{ site.BASE_PATH }}/assets/css/default.css" rel="stylesheet">
 
 
@@ -33,20 +31,9 @@
 </head>
 
 <body>
-	<div class="header">
-		<div class="header-wrap">
-			<div class="header-nav">
-				<!-- <p>{{current_user.is_anonymous }}</p> -->
-				<li class="header-nav-li ">
-					<a class="header-nav-link " href="{{ site.BASE_PATH }}"><b>Home</b></a>
-				</li>
 
-			</div>
 
-		</div>
-	</div>
-
-	<div class="container container-wrap ">
+	<div class="header-nav-right ">
 		<div class="container-side-nav-right">
 			<h3>实用链接</h3>
 			<div class="container-side-nav-link">
@@ -65,7 +52,7 @@
 	</div>
 
 	<!-- nav-menu-dropdown -->
-	<div class="container container-wrap ">
+	<div class="header-nav-left ">
 		<div class="container-side-nav-left">
 			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
 			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
