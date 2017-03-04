@@ -63,9 +63,10 @@
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
 			{% for category in site.categories %}
             <li>
-                <a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" data-toggle="tab">
+                <h3><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" data-toggle="tab">
                     {{ category[0] | capitalize }} <span class="badge pull-right">{{ category[1].size }}</span>
-                </a>
+                </a></h3>
+                <div class="tab-pane" id="{{ category[0] | replace:' ','-' }}-ref">
                 <ul class="list-unstyled">
 		        {% assign pages_list = category[1] %}
 		        {% for node in pages_list %}
@@ -77,6 +78,7 @@
 		        {% endfor %}
 		        {% assign pages_list = nil %}
 		        </ul>
+		        </div>
             </li>
 			{% endfor %}
 		</ul>
