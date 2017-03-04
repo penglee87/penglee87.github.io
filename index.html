@@ -6,24 +6,23 @@ tagline:
 
 <div class="container container-wrap ">
 
-
-    
-    
+  
     <ul style="float:left;width:750px;">
         {% for post in paginator.posts %}
           <div class="container-blog">
           
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
+          <span class="post-date">
+            {% assign d = post.date | date: "%d" | plus:'0' %}
+            {{ post.date | date: "%B" }}
+            {% case d %}
+            {% when 1 or 21 or 31 %}{{ d }}st,
+            {% when 2 or 22 %}{{ d }}nd,
+            {% when 3 or 23 %}{{ d }}rd,
+            {% else %}{{ d }}th,
+            {% endcase %}
+            {{ post.date | date: "%Y" }}
+          </span>
+
           <h3><a href="{{ site.BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></h3>
             <p>
             {% if post.fullview %}
@@ -42,11 +41,10 @@ tagline:
             <br>
             <div style="width:100%;border-bottom:1px solid #D0D0D0;height:0px;"></div>
             
-          </div>
 
         {% endfor %}
     </ul>
-
+</div>
 <br clear="all">
 
 <!-- 分页链接 -->
