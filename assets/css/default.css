@@ -254,8 +254,15 @@ li{
 	margin: 0 auto;
 }
 
-.container-side-nav {
+.container-side-nav-right {
 	float: right;
+	position: relative;
+	height: 28px;
+	line-height: 28px;
+}
+
+.container-side-nav-left {
+	float: left;
 	position: relative;
 	height: 28px;
 	line-height: 28px;
