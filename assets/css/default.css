@@ -149,18 +149,22 @@ li{
 }
 
 .header-nav {
+	position: relative;
 	float: right;
-	position: relative
 }
 
 .header-nav-left {
+	position: relative;
 	float: left;
-	position: fixed
+	top: 0;
+	left: 0;
 }
 
-.header-nav-right {
+.header-nav-right {	
+	position: relative;
 	float: right;
-	position: fixed
+	top: 0;
+	right: 0;
 }
 .header-nav-li {
 	position: relative;
