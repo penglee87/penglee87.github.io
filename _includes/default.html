@@ -61,6 +61,9 @@
 			<li><a href="{{ site.BASE_PATH}}/resume"><i class="fa fa-user"></i>Resume</a></li>
 			<li class="divider"></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+			{% for category in site.categories %}
+				<h2 style="margin-top: 0px">Posts in {{ category[0] | capitalize }}</h2>
+			{% endfor %}
 		</ul>
 	</div>
 
