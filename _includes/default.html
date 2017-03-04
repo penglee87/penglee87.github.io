@@ -19,8 +19,6 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/css/pygments.css" rel="stylesheet">
-	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/default.css" rel="stylesheet">
 
 
@@ -35,53 +33,54 @@
 </head>
 
 <body>
-<div class="container container-wrap ">
-    <div class="container-side-nav-right">
-        <h3>实用链接</h3>
-        <div class="container-side-nav-link">
-            <li><a target="_blank"
-                   href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python教程</a>
-            </li>
-            <li><a target="_blank"
-                   href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a>
-            </li>
-            <li><a target="_blank" href="https://github.com/penglee87">My Git</a></li>
-            <li><a target="_blank" href="{{ url_for('.blog', id=1) }}">关于本站</a></li>
-        </div>
-    </div>
-</div>
-
-<!-- nav-menu-dropdown -->
-<div class="container container-wrap ">
-    <div class="container-side-nav-left">
-		<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
-		<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
-		<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
-		<li><a href="{{ site.BASE_PATH}}/resume"><i class="fa fa-user"></i>Resume</a></li>
-		<li class="divider"></li>
-		<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
-		{% for category in site.categories %}
-        <li>
-            <h3><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" data-toggle="tab">
-                {{ category[0] | capitalize }} <span class="badge pull-right">{{ category[1].size }}</span>
-            </a></h3>
-            <div class="tab-pane" id="{{ category[0] | replace:' ','-' }}-ref">
-            <ul class="list-unstyled">
-	        {% assign pages_list = category[1] %}
-	        {% for node in pages_list %}
-	          {% if node.title != null %}
-	            {% if group == null or group == node.group %}
-	              <li style="line-height: 35px;"><a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a> <span class="text-muted">- {{ node.date | date: "%B %d, %Y" }}</span></li>
-	            {% endif %}
-	          {% endif %}
-	        {% endfor %}
-	        {% assign pages_list = nil %}
-	        </ul>
-	        </div>
-        </li>
-		{% endfor %}
+	<div class="container container-wrap ">
+		<div class="container-side-nav-right">
+			<h3>实用链接</h3>
+			<div class="container-side-nav-link">
+				<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
+				<li><a target="_blank"
+					   href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python教程</a>
+				</li>
+				<li><a target="_blank"
+					   href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a>
+				</li>
+				<li><a target="_blank" href="https://github.com/penglee87">My Git</a></li>
+				<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+			</div>
+		</div>
 	</div>
-</div>
+
+	<!-- nav-menu-dropdown -->
+	<div class="container container-wrap ">
+		<div class="container-side-nav-left">
+			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
+			<li><a href="{{ site.BASE_PATH}}/resume"><i class="fa fa-user"></i>Resume</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+			{% for category in site.categories %}
+			<li>
+				<h3><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" data-toggle="tab">
+					{{ category[0] | capitalize }} <span class="badge">{{ category[1].size }}</span>
+				</a></h3>
+				<div class="tab-pane" id="{{ category[0] | replace:' ','-' }}-ref">
+				<ul class="list-unstyled">
+				{% assign pages_list = category[1] %}
+				{% for node in pages_list %}
+				  {% if node.title != null %}
+					{% if group == null or group == node.group %}
+					  <li style="line-height: 35px;"><a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a> <span class="text-muted">- {{ node.date | date: "%B %d, %Y" }}</span></li>
+					{% endif %}
+				  {% endif %}
+				{% endfor %}
+				{% assign pages_list = nil %}
+				</ul>
+				</div>
+			</li>
+			{% endfor %}
+		</div>
+	</div>
 
 
 	<div class="col-sm-9 col-sm-offset-3">

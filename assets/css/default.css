@@ -284,6 +284,7 @@ li{
 	text-decoration:underline;
 }
 
+.badge { background: #F2756A; }
 /*
 .container-side-nav-link li a:visited{
 	color: #0066cc;
