@@ -6,7 +6,7 @@ exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
 title: Lee1's Journey
-description: Lee1的随想和技术空间
+description: Lee的随想和技术空间
 
 defaults:
   -
@@ -14,7 +14,6 @@ defaults:
       path: "" # empty string for all files
     values:
       title: Lee's Journey
-      description: Lee的随想和技术空间
 
 
 author:
