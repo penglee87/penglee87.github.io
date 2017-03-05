@@ -9,8 +9,10 @@ title: Lee1's Journey
 description: Lee的随想和技术空间
 
 defaults:
+  -
+    scope:
+      path: "" # empty string for all files
     values:
-      title: Lee2's Journey
       description: Lee2的随想和技术空间
 
 
