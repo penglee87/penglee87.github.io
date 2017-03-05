@@ -154,14 +154,14 @@ li{
 	position: relative;
 	float: left;
 	top: 0;
-	left: 10;
+	left: 10px;
 }
 
 .header-nav-right {	
 	position: relative;
 	float: right;
 	top: 0;
-	right: 10;
+	right: 10px;
 }
 .header-nav-li {
 	position: relative;
@@ -198,7 +198,7 @@ li{
 	line-height: 45px;
 	color: #fff;
 	text-decoration: none;
-	border-top: 0;
+	border-top: 0px;
 	background: transparent;
 	box-shadow: none;
 	white-space: nowrap;
@@ -317,3 +317,8 @@ li{
 	width: 270px
 }
 */
+
+
+.tab-content > .tab-pane {
+  display: none;
+}

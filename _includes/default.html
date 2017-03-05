@@ -65,6 +65,7 @@
 				<h3><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" data-toggle="tab">
 					{{ category[0] | capitalize }} <span class="badge">{{ category[1].size }}</span>
 				</a></h3>
+				<!--
 				<div class="tab-pane" id="{{ category[0] | replace:' ','-' }}-ref">
 				<ul class="list-unstyled">
 				{% assign pages_list = category[1] %}
@@ -78,6 +79,7 @@
 				{% assign pages_list = nil %}
 				</ul>
 				</div>
+				-->
 			</li>
 			{% endfor %}
 		</div>
