@@ -36,7 +36,7 @@
 		<div class="header-nav-right">
 			<h3>实用链接</h3>
 			<div class="container-side-nav-link">
-				<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="{{ site.BASE_PATH}}/">Home</a></li>
 				<li><a target="_blank"
 					   href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000">Python教程</a>
 				</li>
@@ -53,10 +53,11 @@
 	<!-- nav-menu-dropdown -->
 	<div class="header ">
 		<div class="header-nav-left">
-			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
-			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
-			<li><a href="{{ site.BASE_PATH}}/resume"><i class="fa fa-user"></i>Resume</a></li>
+		<div class="container-side-nav-link">
+			<li><a href="{{ site.BASE_PATH}}/">Home</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
+			<li><a href="{{ site.BASE_PATH}}/resume">Resume</a></li>
 			<li class="divider"></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
 			{% for category in site.categories %}
@@ -82,6 +83,7 @@
 			</li>
 			{% endfor %}
 		</div>
+		</div>
 	</div>
 
 
@@ -95,9 +97,10 @@
 			</p>
 		</footer>
 	</div>
-
+	<!--
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+	-->
 </body>
 </html>
