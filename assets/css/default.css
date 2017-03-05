@@ -125,12 +125,30 @@ li{
 	font-size: 18px;
 }
 
+
+
 /*
 .page-header {
 	color: #e74c3c;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45px;
+	background: #0767c8;
+	border-bottom: 1px solid #044e97;
+	z-index:1
+}
 */
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
 
 .header {
 	position: fixed;
@@ -140,6 +158,7 @@ li{
 	height: 45px;
 	border-bottom: 1px solid #eee;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+	z-index:1
 }
 
 .header-wrap{
@@ -339,4 +358,15 @@ li{
   vertical-align: middle;
   background-color: #777;
   border-radius: 10px;
+}
+
+
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pager li {
+  display: inline;
 }
