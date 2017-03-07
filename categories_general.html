@@ -3,44 +3,12 @@ layout: page
 tagline:
 ---
 
-  <!-- nav-menu-dropdown -->
-  <div class="header ">
-    <div class="header-nav-left">
-      <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-      
-      {% for category in site.categories %}
-      <div class="dropdown">
-        <li>        
-        <a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] | replace:' ','-' }}-ref" >
-            {{ category[0] | capitalize }} <span class="badge">{{ category[1].size }}</span>
-          </a>
-        </li>
-
-        <div class="dropdown-content">        
-        <li>
-          {% assign pages_list = category[1] %}
-          {% for node in pages_list %}
-            {% if node.title != null %}
-            {% if group == null or group == node.group %}
-              <li style="line-height: 35px;"><a href="{{ site.BASE_PATH }}{{node.url}}">{{node.title}}</a> <span class="text-muted">- {{ node.date | date: "%B %d, %Y" }}</span></li>
-            {% endif %}
-            {% endif %}
-          {% endfor %}
-          {% assign pages_list = nil %}
-
-        </li>       
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  
 
 <div class="container container-wrap ">
 
   
     <ul style="float:left;width:750px;">
-        {% for post in paginator.posts %}
+        {% for post in site.categories.general[1] %}
           <div class="container-blog">
           
           <span class="post-date">
