@@ -3,7 +3,7 @@ layout: page
 tagline:
 ---
 
-  <!-- nav-menu-dropdown -->
+  <!-- nav-menu-dropdown 
   <div class="header ">
     <div class="header-nav-left">
       <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
@@ -34,16 +34,19 @@ tagline:
       {% endfor %}
     </div>
   </div>
-  
+  -->
 
-<div class="container container-wrap ">
+<div class="container container-wrap">
 
   
-    <ul style="float:left;width:750px;">
+    <!--<ul style="float:left;width:750px;">-->
+    <ul>
         {% for post in paginator.posts %}
           <div class="container-blog">
-          
-          <span class="post-date">
+
+          <h2><a href="{{ site.BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></h2>
+
+          <div class="post-date">
             {% assign d = post.date | date: "%d" | plus:'0' %}
             {{ post.date | date: "%B" }}
             {% case d %}
@@ -53,9 +56,9 @@ tagline:
             {% else %}{{ d }}th,
             {% endcase %}
             {{ post.date | date: "%Y" }}
-          </span>
+          </div>
 
-          <h3><a href="{{ site.BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></h3>
+
             <p>
             {% if post.fullview %}
             {{ post.content }}
@@ -78,7 +81,8 @@ tagline:
     </ul>
 </div>
 <br clear="all">
-
+<br>
+<br>
 <!-- 分页链接 -->
 <ul class="pager"> 
 

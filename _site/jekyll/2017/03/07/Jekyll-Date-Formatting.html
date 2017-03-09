@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jekyll 日期格式</title>
+	
+	<meta name="description" content="Jekyll Date Formatting">
+	
+	<meta name="author" content="lee">
+	
+
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/pygments.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+	<link href="/assets/css/default.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+</head>
+
+<body>
+
+	<!-- nav-menu-right 
+	<div class="header ">
+		<div class="header-nav-right">
+			<h3>实用链接</h3>
+			<div class="container-side-nav-link">
+				<li><a href="/">Home</a></li>
+				<li><a target="_blank" href="https://github.com/penglee87">My Git</a></li>
+				<li><a target="_blank" href="https://www.zhihu.com/people/lee-82-75-31/activities">My Zhihu</a></li>
+				<li><a href="/categories.html">Categories</a></li>
+				<li><a href="/tags.html">Tags</a></li>
+				<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+			</div>
+		</div>
+	</div>
+	-->
+
+	<!-- nav-menu-dropdown -->
+	<div class="header ">
+		<div class="header-nav-left">
+			<li><a href="/">Home</a></li>
+			<li><a href="/categories.html">Categories</a></li>
+			<!--<li><a href="/tags.html">Tags</a></li> -->
+			<li><a href="/about.html">About</a></li>
+			<li><a target="_blank" href="https://github.com/penglee87">My Git</a></li>
+			<li><a target="_blank" href="https://www.zhihu.com/people/lee-82-75-31/activities">My Zhihu</a></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+			
+
+		</div>
+	</div>
+	
+	<!-- nav-menu-dropdown 
+	<div class="header ">
+		<div class="header-nav-left">
+			<li><a href="/categories.html">Categories</a></li>
+			
+			
+			<div class="dropdown">
+				<li>				
+				<a href="/categories_general.html" >
+						Jekyll <span class="badge">5</span>
+					</a>
+				</li>
+
+				<div class="dropdown-content">				
+				<li>
+					
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/jekyll/2017/03/07/Jekyll%E6%90%AD%E5%BB%BA%E6%9C%AC%E5%9C%B0%E5%8D%9A%E5%AE%A2%E7%8E%AF%E5%A2%83.html">Jekyll搭建本地博客环境</a> <span class="text-muted">- March 07, 2017</span></li>
+						
+					  
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/jekyll/2017/03/07/Jekyll-%E5%B8%B8%E7%94%A8%E5%8F%98%E9%87%8F.html">Jekyll 常用变量</a> <span class="text-muted">- March 07, 2017</span></li>
+						
+					  
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/jekyll/2017/03/07/Jekyll-Date-Formatting.html">Jekyll 日期格式</a> <span class="text-muted">- March 07, 2017</span></li>
+						
+					  
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/reproduce/jekyll/2015/06/06/%E5%9C%A8github-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html">在github pages网站下用jekyll制作博客教程</a> <span class="text-muted">- June 06, 2015</span></li>
+						
+					  
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/jekyll/reproduce/2013/11/14/sample.html">Sample</a> <span class="text-muted">- November 14, 2013</span></li>
+						
+					  
+					
+					
+
+				</li>				
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<li>				
+				<a href="/categories_general.html" >
+						Reproduce <span class="badge">2</span>
+					</a>
+				</li>
+
+				<div class="dropdown-content">				
+				<li>
+					
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/reproduce/jekyll/2015/06/06/%E5%9C%A8github-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html">在github pages网站下用jekyll制作博客教程</a> <span class="text-muted">- June 06, 2015</span></li>
+						
+					  
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/jekyll/reproduce/2013/11/14/sample.html">Sample</a> <span class="text-muted">- November 14, 2013</span></li>
+						
+					  
+					
+					
+
+				</li>				
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<li>				
+				<a href="/categories_general.html" >
+						Markdown <span class="badge">1</span>
+					</a>
+				</li>
+
+				<div class="dropdown-content">				
+				<li>
+					
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/markdown/2017/02/25/Markdown%E8%AF%AD%E6%B3%95.html">Markdown 常用语法指南</a> <span class="text-muted">- February 25, 2017</span></li>
+						
+					  
+					
+					
+
+				</li>				
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<li>				
+				<a href="/categories_general.html" >
+						Mysql <span class="badge">1</span>
+					</a>
+				</li>
+
+				<div class="dropdown-content">				
+				<li>
+					
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/mysql/2017/02/25/mysql-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html">Mysql 常用语句</a> <span class="text-muted">- February 25, 2017</span></li>
+						
+					  
+					
+					
+
+				</li>				
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<li>				
+				<a href="/categories_general.html" >
+						Python <span class="badge">1</span>
+					</a>
+				</li>
+
+				<div class="dropdown-content">				
+				<li>
+					
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/python/flask/2017/03/07/flaskweb-%E5%B7%A5%E5%8E%82%E5%87%BD%E6%95%B0.html">flaskweb 工厂函数</a> <span class="text-muted">- March 07, 2017</span></li>
+						
+					  
+					
+					
+
+				</li>				
+				</div>
+			</div>
+			
+			<div class="dropdown">
+				<li>				
+				<a href="/categories_general.html" >
+						Flask <span class="badge">1</span>
+					</a>
+				</li>
+
+				<div class="dropdown-content">				
+				<li>
+					
+					
+					  
+						
+						  <li style="line-height: 35px;"><a href="/python/flask/2017/03/07/flaskweb-%E5%B7%A5%E5%8E%82%E5%87%BD%E6%95%B0.html">flaskweb 工厂函数</a> <span class="text-muted">- March 07, 2017</span></li>
+						
+					  
+					
+					
+
+				</li>				
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	-->
+
+	<div >
+		<div class="header">
+  <h1>Lee's Journey</h1>
+</div>
+
+<div class="container container-wrap ">
+
+	<div class="page-header">
+	  <h1>Jekyll 日期格式 </h1>
+	</div>
+
+
+	<div class="post-body">
+
+	 <span class="post-date">
+	   
+	   March 
+	   7th,
+	   
+	   2017
+	 </span>
+		<div class="article_body">
+		<p>转至 <a href="http://alanwsmith.com/jekyll-liquid-date-formatting-examples">http://alanwsmith.com/jekyll-liquid-date-formatting-examples</a></p>
+
+<hr />
+<h3 id="overview">Overview</h3>
+<p>2017-03-07 00:00:00 +0800<br />
+2013-11-29 00:00:00 -0500</p>
+
+<p>March 07, 2017<br />
+November 29, 2013</p>
+
+<h3 id="built-in-jekyll-date-filters">Built-in Jekyll Date Filters</h3>
+<p>● Date to String</p>
+
+<p>07 Mar 2017<br />
+Output Example 1: 03 May 2013<br />
+Output Example 2: 04 Jul 2013<br />
+Output Example 3: 23 Sep 2013<br />
+Output Example 4: 26 Nov 2013</p>
+
+<p>● Date to Long String</p>
+
+<p>07 March 2017<br />
+Output Example 1: 03 May 2013<br />
+Output Example 2: 04 July 2013<br />
+Output Example 3: 23 September 2013<br />
+Output Example 4: 26 November 2013</p>
+
+<p>● Date to XML Schema</p>
+
+<p>2017-03-07T00:00:00+08:00<br />
+Output Example 1: 2013-05-03T09:14:00-04:00<br />
+Output Example 2: 2013-07-04T09:14:00-04:00<br />
+Output Example 3: 2013-09-23T09:14:00-04:00<br />
+Output Example 4: 2013-11-26T08:14:00-05:00</p>
+
+<p>● Date to RFC-822</p>
+
+<p>Tue, 07 Mar 2017 00:00:00 +0800<br />
+Output Example 1: Fri, 03 May 2013 09:14:00 -0400<br />
+Output Example 2: Thu, 04 Jul 2013 09:14:00 -0400<br />
+Output Example 3: Mon, 23 Sep 2013 09:14:00 -0400<br />
+Output Example 4: Tue, 26 Nov 2013 08:14:00 -0500</p>
+
+<h3 id="liquid-jekyll-date-formatting-examples">Liquid Jekyll Date Formatting Examples</h3>
+<p>● ISO 8601 Date5</p>
+
+<p>2017-03-07<br />
+Output Example 1: 2013-05-03<br />
+Output Example 2: 2013-07-04<br />
+Output Example 3: 2013-09-23<br />
+Output Example 4: 2013-11-26</p>
+
+<p>● U.S. Numeric Style with Four Digit Years (With leading zeros.)</p>
+
+<p>03/07/2017<br />
+Output Example 1: 05/03/2013<br />
+Output Example 2: 07/04/2013<br />
+Output Example 3: 09/23/2013<br />
+Output Example 4: 11/26/2013</p>
+
+<p>● U.S. Numeric Style with Four Digit Years (Leading zeros removed.)</p>
+
+<p>3/7/2017<br />
+Output Example 1: 5/3/2013<br />
+Output Example 2: 7/4/2013<br />
+Output Example 3: 9/23/2013<br />
+Output Example 4: 11/26/2013</p>
+
+<p>● U.S. Numeric Style with Two Digit Year (Leading zeros removed.)</p>
+
+<p>3/7/17<br />
+Output Example 1: 5/3/13<br />
+Output Example 2: 7/4/13<br />
+Output Example 3: 9/23/13<br />
+Output Example 4: 11/26/13</p>
+
+<p>● Outside U.S. Style with Full Month Name (Leading zeros removed.)</p>
+
+<p>7 March 2017<br />
+Output Example 1: 3 May 2013<br />
+Output Example 2: 4 July 2013<br />
+Output Example 3: 23 September 2013<br />
+Output Example 4: 26 November 2013</p>
+
+<p>● Outside U.S. Style with Non-English Full Month Name (Leading zeros removed.)</p>
+
+<p>This example uses the German names for months. Any other language can be used by simply substituting the proper names for each month.</p>
+
+<!-- Whitespace added for readability -->
+
+<pre><code>7
+M&amp;auml;rz
+  
+2017
+</code></pre>
+
+<p>Output Example 1: 3 Mai 2013<br />
+Output Example 2: 4 Juli 2013<br />
+Output Example 3: 23 September 2013<br />
+Output Example 4: 26 November 2013</p>
+
+<p>● U.S. Style with Full Month Name (Leading zeros removed.)</p>
+
+<p>March 7, 2017<br />
+Output Example 1: May 3, 2013<br />
+Output Example 2: July 4, 2013<br />
+Output Example 3: September 23, 2013<br />
+Output Example 4: November 26, 2013</p>
+
+<p>● U.S. Style with Full Month Names and Ordinalized Days (Leading zeros removed.)</p>
+
+<!-- Whitespace added for readability -->
+
+<pre><code>March 
+7th
+  , 
+2017
+</code></pre>
+
+<p>Output Example 1: May 3rd, 2013<br />
+Output Example 2: July 4th, 2013<br />
+Output Example 3: September 23rd, 2013<br />
+Output Example 4: November 26th, 2013</p>
+
+<p>● U.S. Style with AP Month Abbreviations and Ordinalized Days (Leading zeros removed.)</p>
+
+<!-- Whitespace added for readability -->
+
+<pre><code>Mar.
+  
+7th
+  , 
+2017
+</code></pre>
+
+<p>Output Example 1: May 3rd, 2013<br />
+Output Example 2: July 4th, 2013<br />
+Output Example 3: Sept. 23rd, 2013<br />
+Output Example 4: Nov. 26th, 2013</p>
+
+<p>● U.S. Style Full Day and Full Month Names (Leading zeros removed.)</p>
+
+<p>Tuesday, March 7, 2017
+Output Example 1: Friday, May 3, 2013<br />
+Output Example 2: Thursday, July 4, 2013<br />
+Output Example 3: Monday, September 23, 2013<br />
+Output Example 4: Tuesday, November 26, 2013</p>
+
+<p>● Chicago Manual of Style Day Abbreviations and U.S. Style Date (With “Thurs.” and “Tues.”)</p>
+
+<!-- Whitespace added for readability -->
+
+<pre><code>Tues
+  . 
+~
+March 
+7, 
+2017
+</code></pre>
+
+<p>Output Example 1: Fri. ~ May 3, 2013<br />
+Output Example 2: Thurs. ~ July 4, 2013<br />
+Output Example 3: Mon. ~ September 23, 2013<br />
+Output Example 4: Tues. ~ November 26, 2013</p>
+
+<h3 id="individual-component-snippets-for-liquid-date-formatting">Individual Component Snippets for Liquid Date Formatting</h3>
+
+<p>● Numeric Month with Leading Zeros Removed</p>
+
+<p>3</p>
+
+<p>● Numeric Day with Leading Zeros Removed</p>
+
+<p>7</p>
+
+<p>● Ordinalized Numeric Day with Leading Zeros Removed</p>
+
+<pre><code>7th
+</code></pre>
+
+<p>● AP Style Month Abbreviations</p>
+
+<pre><code>Mar.
+</code></pre>
+
+<p>(Produces: “Jan.”, “Feb.”, “Mar.”, “April”, “May”, “June”, “July”, “Aug.”, “Sept.”, “Oct.”, “Nov.”, “Dec.”)</p>
+
+<p>● Chicago Manual of Style Day Abbreviations</p>
+
+<pre><code>Tues
+  .
+</code></pre>
+
+<p>(Produces: “Sun.”, “Mon.”, “Tues.”, “Wed.”, “Thurs.”, “Fri.”, “Sat.”)</p>
+
+<p>● Chicago Manual of Style Month Abbreviations</p>
+
+<pre><code>Mar.
+</code></pre>
+
+<p>(Produces: “Jan.”, “Feb.”, “Mar.”, “Apr.”, “May”, “June”, “July”, “Aug.”, “Sept.”, “Oct.”, “Nov.”, “Dec.”)</p>
+
+<p>● Non-English Month Names</p>
+
+<pre><code>M&amp;auml;rz
+</code></pre>
+
+<p>(Produces: “Januar”, “Febuar”, “März”, “April”, “Mai”, “Juni”, “Juli”, “August”, “September”, “Oktober”, “November”, “Dezember”)</p>
+
+<hr />
+<p>Notes on the Examples</p>
+<ol>
+  <li>The hour, minute and second parts of the full date/time stamp aren’t being used because Jekyll tends to zero them out.</li>
+  <li>In some of the examples, the code is split to multiple lines to help readability. If it’s a natural break point where white space already exists, this won’t effect HTML rendering. In some cases, it will introduce unwanted white space. Simply move everything back to one line to create the desired presentation.</li>
+  <li>Since the original version of this post went up, updates have been made to use the cleaner version of 3 instead of 3 and 7 instead of 7 to remove leading zeros.</li>
+  <li>An additional update was made to add an example for non-English month names.
+Footnotes</li>
+  <li>These examples were create on a Mac running OS X 10.8.5 with: Ruby 2.0.0p247 - Jekyll 1.2.1 - liquid 2.5.2. Your mileage may vary.</li>
+  <li>The main Jekyll website provides a great overview of the software. You can learn even more with a visit to the Jekyll’s GitHub Repo.</li>
+  <li>Shopify’s Liquid template engine. “A small and fast template language which is quick to learn but very powerful for full customization.”</li>
+  <li>The Liquid Date Filter offers some basic formatting elements and is the basis of these code snippets. Note that in some cases “post.date” might be required instead of “page.date”.</li>
+  <li>Observant readers will notice that as of the time this post went live, my design still uses a date format with leading zeros. I have the solution, it just hasn’t been implement yet. It’ll go in with the next set of design changes.</li>
+  <li>ISO 8601 - “Data elements and interchange formats - Information interchange - Representation of dates and times is an international standard covering the exchange of date and time-related data.” A perfect example of how Time really is wibbly wobbly timey wimey… stuff.</li>
+</ol>
+
+		</div>
+
+		
+		<ul class="tag_box list-unstyled list-inline">
+		  <li><i class="fa fa-folder-open"></i></li>
+		  
+		  
+			 
+				<li><a href="/categories.html#Jekyll-ref">
+					Jekyll <span>(5)</span>
+					
+				</a></li>
+			
+		  
+		</ul>
+		  
+
+		
+		<ul class="list-inline">
+		  <li><i class="fa fa-tags"></i></li>
+		  
+		  
+			 
+				<li>
+					<a href="/tags.html#Jekyll-ref">
+					Jekyll <span>(5)</span>
+					,
+					</a>
+				</li>
+			 
+				<li>
+					<a href="/tags.html#语法-ref">
+					语法 <span>(6)</span>
+					
+					</a>
+				</li>
+			
+		  
+		  
+		</ul>
+		  
+
+		<hr>
+
+
+
+		<div class="clearfix"></div>
+
+			<ul class="pager">
+			  
+			  <li class="previous"><a href="/mysql/2017/02/25/mysql-%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95.html" title="Mysql 常用语句">&larr; Previous</a></li>
+			  
+			  
+			  <li class="next"><a href="/jekyll/2017/03/07/Jekyll-%E5%B8%B8%E7%94%A8%E5%8F%98%E9%87%8F.html" title="Jekyll 常用变量">Next &rarr;</a></li>
+			  
+			</ul>
+
+
+	</div>
+		
+
+</div>
+
+
+
+
+	</div>
+	<!--
+	<div class="footer">
+		<hr/>
+		<p>
+			&copy; 2017 lee with Jekyll. Theme: 
+			<a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+		</p>
+	</div>
+
+	
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+	-->
+</body>
+</html>

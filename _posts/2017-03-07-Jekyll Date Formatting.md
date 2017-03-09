@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Jekyll 日期格式
-categories: 技术 Jekyll
+categories: Jekyll
 tags: Jekyll 语法
 description: Jekyll Date Formatting
 ---
 
 
-http://alanwsmith.com/jekyll-liquid-date-formatting-examples
+转至 [http://alanwsmith.com/jekyll-liquid-date-formatting-examples](http://alanwsmith.com/jekyll-liquid-date-formatting-examples)
 
 
 
---------------------------------------------------------------------------------
+---
 ### Overview
 {{ page.date }}  
 2013-11-29 00:00:00 -0500

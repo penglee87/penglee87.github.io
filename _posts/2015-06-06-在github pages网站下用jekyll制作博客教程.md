@@ -2,11 +2,10 @@
 layout: post
 title: 在github pages网站下用jekyll制作博客教程
 categories:
-- Works
-- Tech
+- reproduce
+- Jekyll
 tags:
-- javascript
-- jekyll
+- Jekyll
 - github
 ---
 此篇文章转至 [http://kresnik.wang](http://kresnikwang.github.io)
