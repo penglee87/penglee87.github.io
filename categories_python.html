@@ -1,0 +1,55 @@
+---
+layout: page
+tagline:
+---
+
+
+<div class="container container-wrap ">
+  
+    <ul style="float:left;width:750px;">
+        {% for category in site.categories %}
+          <div class="container-blog">
+            {% if category[0] == "python" %}
+            {% assign pages_list = category[1] %}
+              {% for post in pages_list %}
+              <span class="post-date">
+                {% assign d = post.date | date: "%d" | plus:'0' %}
+                {{ post.date | date: "%B" }}
+                {% case d %}
+                {% when 1 or 21 or 31 %}{{ d }}st,
+                {% when 2 or 22 %}{{ d }}nd,
+                {% when 3 or 23 %}{{ d }}rd,
+                {% else %}{{ d }}th,
+                {% endcase %}
+                {{ post.date | date: "%Y" }}
+              </span>
+
+          
+
+
+          <h3><a href="{{ site.BASE_PATH }}{{ post.url }}" target="_blank">{{ post.title }}</a></h3>
+            <p>
+            {% if post.fullview %}
+            {{ post.content }}
+            {% else %}
+            {% if post.shortinfo %}
+            {{ post.shortinfo }}
+            {% elsif post.description %}
+            {{ post.description }}
+            {% else %}
+            {{ post.excerpt }}
+            {% endif %}
+            {% endif %}
+            </p>
+            
+            <br>
+            <div style="width:100%;border-bottom:1px solid #D0D0D0;height:0px;"></div>
+            
+              {% endfor %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </ul>
+</div>
+<br clear="all">
+
