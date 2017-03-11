@@ -36,7 +36,6 @@ li{
 .post-date {
 	text-transform: uppercase;
 	font-size: 12px;
-	letter-spacing: 3px;
 	-webkit-transform-origin-x: 0;
     -webkit-transform: scale(0.80);
 }
@@ -341,13 +340,12 @@ li{
 	margin: 0 0 0 -270px;
 	width: 270px
 }
-*/
 
 
 .tab-content > .tab-pane {
   display: none;
 }
-
+*/
 
 .badge {
   display: inline-block;
