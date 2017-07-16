@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Jekyll 日期格式
-categories: Jekyll
-tags: Jekyll 语法
+categories: jekyll
+tags: jekyll 语法
 description: Jekyll Date Formatting
 ---
 
